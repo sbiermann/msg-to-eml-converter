@@ -1,50 +1,50 @@
-# MSG zu EML Konverter
+# MSG to EML Converter
 
-Dieses Tool konvertiert Outlook `.msg`-Dateien in standardkonforme `.eml`-Dateien. Die `.eml`-Dateien entsprechen dem RFC 822-Format und sind mit allen gängigen E-Mail-Clients (z. B. Thunderbird, Apple Mail, Outlook, etc.) kompatibel.
+This tool converts Outlook `.msg` files to standard-compliant `.eml` files. The `.eml` files conform to the RFC 822 format and are compatible with all common email clients (e.g., Thunderbird, Apple Mail, Outlook, etc.).
 
-## 📦 Voraussetzungen
+## 📦 Prerequisites
 
-- Java 21 oder höher
+- Java 21 or higher
 - Maven 3.x
 
 ## 🔧 Build
 
-Das Projekt wird mit Maven gebaut:
+The project is built with Maven:
 
 ```sh
 mvn clean package
 ```
 
-Nach dem erfolgreichen Build findest du eine ausführbare JAR-Datei im Verzeichnis `target`:
+After a successful build, you will find an executable JAR file in the `target` directory:
 ```
 target/msg-to-eml-converter-1.0.0-shaded.jar
 ```
 
-## ▶️ Nutzung
+## ▶️ Usage
 
-Die Konvertierung wird über die Kommandozeile ausgeführt:
+The conversion is performed via the command line:
 
 ```sh
 java -jar target/msg-to-eml-converter-1.0.0-shaded.jar <input.msg> <output.eml>
 ```
 
-Beispiel:
+Example:
 ```sh
-java -jar target/msg-to-eml-converter-1.0.0-shaded.jar meine-email.msg meine-email.eml
+java -jar target/msg-to-eml-converter-1.0.0-shaded.jar my-email.msg my-email.eml
 ```
 
-## 🔗 Abhängigkeiten
+## 🔗 Dependencies
 
-Dieses Projekt verwendet die folgende Bibliothek:
+This project uses the following library:
 
 - [outlook-message-parser](https://github.com/bbottema/outlook-message-parser) 
 
-## ⚠️ Hinweis
+## ⚠️ Note
 
-- Alle Header aus der Originalnachricht werden übernommen.
-- Anhänge werden korrekt eingebunden.
-- Der Body wird als HTML oder Plaintext übernommen (je nach Inhalt der Originalnachricht).
+- All headers from the original message are preserved.
+- Attachments are correctly included.
+- The body is preserved as HTML or plain text (depending on the content of the original message).
 
-## 📜 Lizenz
+## 📜 License
 
-APL 2.0. Siehe [LICENSE](LICENSE).
+APL 2.0. See [LICENSE](LICENSE).
