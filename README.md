@@ -47,4 +47,4 @@ Dieses Projekt verwendet die folgende Bibliothek:
 
 ## 📜 Lizenz
 
-APL 2.0
+APL 2.0. Siehe [LICENSE](LICENSE).
