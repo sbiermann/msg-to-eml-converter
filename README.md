@@ -37,7 +37,7 @@ java -jar target/msg-to-eml-converter-1.0.0-shaded.jar meine-email.msg meine-ema
 
 Dieses Projekt verwendet die folgende Bibliothek:
 
-- [outlook-message-parser](https://github.com/bbottema/outlook-message-parser) (Version 3.0.0)
+- [outlook-message-parser](https://github.com/bbottema/outlook-message-parser) 
 
 ## ⚠️ Hinweis
 
