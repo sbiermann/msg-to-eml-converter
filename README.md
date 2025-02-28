@@ -47,4 +47,4 @@ Dieses Projekt verwendet die folgende Bibliothek:
 
 ## 📜 Lizenz
 
-MIT License
+APL 2.0
